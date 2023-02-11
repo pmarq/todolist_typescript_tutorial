@@ -9,6 +9,7 @@ function App() {
   const [list, setList] = useState<Item[]>([
     { id: 1, name: 'Comprar pão na padaria', done: false },
     { id: 2, name: 'Comprar bolo na padaria', done: false },
+    {id: 3 , name: 'Comprar leite na padaria', done:false}
   ]);
 
   return (
@@ -19,7 +20,7 @@ function App() {
        {/* Área de adicionar tarefa*/}
 
       {list.map((item, index)=>(
-       <ListItem />
+        <ListItem key={index} item={item}/>
       ))}
 
       </C.Area>
