@@ -5,6 +5,8 @@ import{ ListItem } from './components/ListItem';
 import { AddArea } from './components/AddArea';
 
 
+/*tuotrial -Bonieky Lacerda -  https://www.youtube.com/watch?v=95sAtAareR8 */
+
 function App() {
 
   const [list, setList] = useState<Item[]>([
